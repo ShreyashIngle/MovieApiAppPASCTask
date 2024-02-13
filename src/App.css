@@ -1,0 +1,90 @@
+/* App.css */
+
+/* Styles for desktop screens */
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Arial, sans-serif; /* Example font-family */
+  padding: 2rem;
+}
+
+form {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+input[type="text"] {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-right: 10px;
+  width: 200px; /* Adjust width as needed */
+}
+
+button[type="submit"] {
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+.element {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  justify-content: center;
+}
+
+.element-div {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.element-div img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px 5px 0 0;
+  margin-bottom: 10px;
+}
+
+.element p {
+  margin: 10px 0;
+  font-size: 16px;
+  text-align: center;
+  color: #333; /* Adjust text color */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .App {
+    padding: 1rem;
+  }
+  
+  input[type="text"] {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  button[type="submit"] {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .element {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
